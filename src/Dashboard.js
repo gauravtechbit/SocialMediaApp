@@ -28,7 +28,8 @@ function Dashboard() {
         <>  
             <div className="container my-5">
       <h2 className="text-center">Welcome to Your Dashboard!</h2>
-      <p className="text-center lead">Hello, {user.email}! Here's your personalized dashboard.</p>
+      <a href='/profile' className="btn btn-success text-center">My Profile</a>
+      <p className="text-center lead">Hello, {user.email}! Here's your personalized dashboard.</p> 
       <div className="text-center mt-4">
         <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
       </div>

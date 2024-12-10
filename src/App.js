@@ -5,6 +5,7 @@ import Register from "./Register";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';   
 import Dashboard from "./Dashboard";  
 import Posts from './Posts';
+import ProfilePage from './profile'
 function App() {  
   const [user, setuser] = useState({ email: '', nameid: '' }); 
   useEffect(() => {  
@@ -50,6 +51,7 @@ function App() {
         <Route path='/Register' element={<Register />} />    
         <Route path='/Dashboard' element={<Dashboard />} />  
         <Route path='/Posts' element={<Posts/>} />
+        <Route path='/Profile' element={<ProfilePage/>} />
       </Routes>  
       </div>
       <footer className="bg-primary text-white text-center py-4">
