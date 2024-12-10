@@ -8,12 +8,12 @@ function Login1(props) {
     const navigate = useNavigate(); 
     const Login = (e) => {    
             e.preventDefault();    
-            debugger;   
+            //debugger;   
             const data = { Email:employee.Email, Password: employee.Password };  
              
             axios.post(apiUrl, data)    
             .then((result) => {    
-                debugger;  
+                //debugger;  
                 console.log(result.data);   
                  
                 if (result.status.toString() == '200')  
@@ -35,7 +35,7 @@ function Login1(props) {
           
           const onChange = (e) => {    
                 e.persist();    
-                debugger;    
+               // debugger;    
                 setemployee({...employee, [e.target.name]: e.target.value});    
               }    
     return (  

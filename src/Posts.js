@@ -38,7 +38,7 @@ catch(err)
   };
 
   const handleUpdate = async (id,content) => {
-    debugger;
+    //debugger;
     setEditPostId(id);
     setEditContent(content);
   };
@@ -56,7 +56,7 @@ catch(err)
 // Save edited post
 const handleSaveEdit = async() =>  {
   // setPosts(
-  debugger;
+  //debugger;
   //   posts.map(post => (post.id === editPostId ? { ...post, content: editContent } : post))
   // );
   await updatePost({ content: editContent, Id:editPostId, UserId: user.nameid });

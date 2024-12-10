@@ -7,11 +7,11 @@ function Register(props) {
   const navigate = useNavigate(); 
   const Registration = (e) => {  
     e.preventDefault();  
-    debugger;  
+    //debugger;  
     const data1 = { Email: data.Email, Password: data.Password, Name: data.Name };  
     axios.post(apiUrl, data1)  
       .then((result) => {  
-        debugger;    
+        //debugger;    
         alert("User added successfully")
         navigate('/Login')  
       }).catch(err => {

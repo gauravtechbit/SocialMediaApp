@@ -13,7 +13,7 @@ function Dashboard() {
     navigate('/login');
   };
     useEffect(() => {  
-        debugger;
+        //debugger;
         var a = localStorage.getItem('UserInfo');  
         var b = JSON.parse(a);  
         console.log(b);  

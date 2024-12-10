@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function ProfilePage() {
     const [user, setuser] = useState({ email: '', nameid: '' }); 
   useEffect(() => {  
-    debugger;
+   // debugger;
     var a = localStorage.getItem('UserInfo');  
     var b = JSON.parse(a);  
     console.log(b);  
